@@ -1,12 +1,27 @@
-# React + Vite
+# WAV to μ-law Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Upload your Non-compressed wav formats, format in real time and download the μ-law file.
 
-Currently, two official plugins are available:
+You can also reproduce the μ-law after format.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Convert as much .wav formats do you want.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instruction to use it
+
+- Download
+- npm install
+
+### Run at your local
+
+- npm run dev
+- open localhost:5174
+- Enjoy (No Compressed WAV only allowed)
+
+
+### Run in Docker
+
+- docker build -t wav-to-ulaw-app .
+- docker run -d -p 8080:80 --name wavulaw wav-to-ulaw:latest
+- open localhost:8080
+- Enjoy (No Compressed WAV only allowed)
