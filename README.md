@@ -25,3 +25,8 @@ Convert as much .wav formats do you want.
 - docker run -d -p 8080:80 --name wavulaw wav-to-ulaw:latest
 - open localhost:8080
 - Enjoy (No Compressed WAV only allowed)
+
+### Simple Version
+
+- Download on Github [HERE](https://github.com/Mizar-Contasti/wav-to-ulaw-simple)
+- Open on your browser and your done. 
